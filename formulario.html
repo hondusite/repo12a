@@ -7,12 +7,33 @@
     <title>formularios</title>
 </head>
 <body>
-   <form method="GET">
-       <label for="nombre">Escriba su nombre:</label><br>
-       <input type="text" name="nombre"><br>
-       <label for="apellido">Escriba su apellido:</label><br>
-       <input type="text" name="apellido"><br>
+   <form>
+       <label for="usuario">Usuario:</label><br>
+       <input type="text" name="usuario" id="usuario"><br>
+       <label for="clave">Contraseña</label><br>
+       <input type="password" name="clave" id="clave" maxlength="6" required><br>
+       <input type="hidden" name="fecha" id="fecha" value="2021-03-10">
+       <p>Sexo:</p>
+       <label for="femenino">Femenino</label>
+       <input type="radio" name="sexo" checked id="femenino" value="F">
+       <label for="masculino">Masculino</label>
+       <input type="radio" name="sexo"  id="masculino" value="M"><br>
+       <p>Servicios públicos</p>
+       <label for="agua">Agua Potable</label>
+       <input type="checkbox" name="agua" id="agua" value="agua">
+       <label for="luz">Luz Eléctrica</label>
+       <input type="checkbox" name="luz" id="luz" checked value="luz">
+       <label for="telefono">Teléfono</label>
+       <input type="checkbox" name="telefono" id="telefono" value="telefono"><br>
+    <label for="foto">Seleccione su imagen de perfil</label>
+    <input type="file" name="foto" id="foto"><br>
+    <label for="edad">Edad:</label>
+    <input type="number" name="edad" id="edad" min="0" max="120" step="1"><br>
+    <label for="fecha">Fecha de Nacimiento</label>
+    <input type="date" name="fecha" id="fecha"><br>
        <input type="submit" value="Enviar">
+       <input type="reset" value="Cancelar">
+       <input type="button" value="Botón">
    </form> 
 </body>
 </html>
