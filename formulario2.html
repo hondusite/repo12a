@@ -9,12 +9,38 @@
 <body>
     <form>
         <label for="depto">Departamento:</label>
-        <select name="depto" id="depto">
-            <option value="03">Comayagua</option>
+        <select name="depto" id="depto" >
+            <option value="03" selected>Comayagua</option>
             <option value="18">La Paz</option>
             <option value="17">Olancho</option>
-            <option value="08" selected>Francisco Morazán</option>
+            <option value="08">Francisco Morazán</option>
         </select><br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" cols="50" rows="5" ></textarea><br>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <input type="radio" name="sexo" id="hombre">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" name="sexo" id="mujer">
+            <label for="mujer">Mujer</label><br>
+            Estado civil
+            <label for="estado">Casado</label>
+            <input type="checkbox" name="estado" id="estado"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Data list</legend>
+            <label for="gustos">
+                Escribe en qué te gusta pasar tu tiempo de ocio
+                </label>
+                <input type="text" id="gustos" name="gustos"
+                list="listaGustos" >
+            <datalist id="listaGustos">
+                <option label="deportes" value="Deportes" >
+                <option label="teatro" value="Teatro">
+                <option label="cine" value="Cine">
+                <option label="leer" value="Leer">
+            </datalist>
+        </fieldset>
         <button type="submit">Guardar</button>
     </form>
 </body>
